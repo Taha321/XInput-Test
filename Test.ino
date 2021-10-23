@@ -11,16 +11,16 @@ void setup()
 
 void loop() 
 {
-  bool val = digitalRead(14);
+  bool stateA = digitalRead(14);
 
-  if(val == true)
+  if(stateA == true)
   {
-    digitalWrite(13,val);
+    digitalWrite(13,stateA);
     XInput.press(BUTTON_A);
   }
-  else if(val == false)
+  else if(stateA == false)
   {
-    digitalWrite(13,val);
+    digitalWrite(13,stateA);
     XInput.release(BUTTON_A);
   }
 }
